@@ -1,0 +1,36 @@
+<aura:component >
+    
+    <aura:registerEvent name="confirm" type="c:modal_confirmation_click" />
+    
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="tagline" type="String" />
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="isHtml" type="Boolean" default="false" />
+    
+    <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open ">
+        <div class="slds-modal__container">
+            <aura:if isTrue="{!not(empty(v.title))}">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" size="large" variant="bare" onclick="{! c.handleCancelClick }" alternativeText="Close" class="slds-modal__close slds-button_icon-inverse" />
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">{!v.title}</h2>
+                    <aura:if isTrue="{!not(empty(v.tagline))}">
+                        <p class="slds-m-top_x-small">{!v.tagline}</p>
+                    </aura:if>
+                </header>
+            </aura:if>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <aura:if isTrue="{!v.isHtml}">
+                    <aura:unescapedHtml value="{!v.message}" />
+                    <aura:set attribute="else">
+                        <p>{!v.message}</p>
+                    </aura:set>
+                </aura:if>
+            </div>
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick="{!c.handleCancelClick}">Cancel</button>
+                <button class="slds-button slds-button_brand" onclick="{!c.handleOkClick}">Ok</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>
