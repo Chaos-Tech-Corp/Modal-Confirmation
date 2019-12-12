@@ -1,0 +1,3 @@
+.THIS.slds-modal, .THIS.slds-backdrop {
+    z-index:9002!important;
+}
