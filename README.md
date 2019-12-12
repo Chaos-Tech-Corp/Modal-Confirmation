@@ -19,7 +19,18 @@ Define `modal_confirmation` component in a custom component markup:
 </aura:component>
 ```
 
-or create it dinamycally in a controller (include `{!v.body}` in the component markup):
+or create it dinamycally in a controller:
+
+```xml
+<aura:component>
+
+    <lightning:button label="Show Confirmation Box" onclick="{!c.showConfirmation}"/>
+    
+    {!v.body}
+
+</aura:component>
+```
+
 ```JavaScript
 ({
     showConfirmation : function(cmp) {
