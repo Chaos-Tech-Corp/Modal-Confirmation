@@ -28,7 +28,7 @@ or create it dinamycally in a controller:
             {
                 "title": "Modal Confirmation Box",
                 "tagline": "This is a modal confirmation box",
-                "message": "Are you sure you want to continue?"
+                "message": "Are you sure you want to continue?",
                 "confirm": cmp.getReference("c.handleConfirm")
             },
             function(modalWindow, status, errorMessage){
