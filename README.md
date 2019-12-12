@@ -19,7 +19,7 @@ Define `modal_confirmation` component in a custom component markup:
 </aura:component>
 ```
 
-or create it dinamycally in a controller:
+or create it dinamycally in a controller (include `{!v.body}` in the component markup):
 ```JavaScript
 ({
     showConfirmation : function(cmp) {
