@@ -1,1 +1,3 @@
-<aura:event type="COMPONENT" description="Confirmation Button Click Event" />
+<aura:event type="COMPONENT" description="Confirmation Button Click Event">
+  <aura:attribute name="param" type="Object"/>
+</aura:event>
