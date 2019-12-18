@@ -6,6 +6,7 @@
     <aura:attribute name="tagline" type="String" />
     <aura:attribute name="message" type="String" />
     <aura:attribute name="isHtml" type="Boolean" default="false" />
+    <aura:attribute name="param" type="Object" />
 
     <div class="slds-backdrop slds-backdrop_open"></div>
     <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open ">
