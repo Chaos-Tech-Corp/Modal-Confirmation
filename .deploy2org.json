@@ -1,0 +1,11 @@
+{
+  "component_name": "demo_component",
+  "api_version": "v47.0",
+  "apex_class": "/code/demoClass.apxc",
+  "bundle_details": {
+    "component":"/src/modal_confirmation.cmp",
+    "controller":"/src/modal_confirmationController.js",
+    "renderer":"/src/modal_confirmationRenderer.js",
+    "style":"/src/modal_confirmation.css"
+  }
+}
