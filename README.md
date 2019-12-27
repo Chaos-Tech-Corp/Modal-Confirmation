@@ -1,3 +1,5 @@
+[![Deploy](https://deploy2.org/dist/deploy2org.svg)](https://deploy2.org/deploy)
+
 # Modal Confirmation Dialog
 
 This component creates a modal confirmation dialog to simulate the javascript `confirm()` function using the lightning design system look and feel, providing callback support for the _yes/ok_ action, allowing parameters to be passed through it.
