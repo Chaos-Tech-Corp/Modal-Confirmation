@@ -43,7 +43,7 @@ or create it dinamycally in a controller:
                 "tagline": "This is a modal confirmation box",
                 "message": "Are you sure you want to continue?",
                 "confirm": cmp.getReference("c.handleConfirm"),
-                "param": cmp.get("v.RecordId");
+                "param": cmp.get("v.RecordId")
             },
             function(modalWindow, status, errorMessage){
                 //Add the new button to the body array
